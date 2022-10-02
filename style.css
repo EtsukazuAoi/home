@@ -1,0 +1,117 @@
+@font-face {
+    font-family: GothamBold;
+    src: url(./assets/font/Gotham/GothamBold.ttf);
+}
+
+.btn {
+    padding: 10px;
+    margin: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 20px #3CBD97;
+}
+
+p {
+    margin: 0px;
+    padding: 0px;
+    display: inline;
+}
+
+body{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* background: url("assets/img/cheminmarcheenpierreverstempleshintoettorii.jpg"); */
+    background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: GothamBold;
+}
+
+#navbar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 60px;
+    background-color: #329E7E;
+    border: none;
+    margin: 0px;
+}
+
+#logo {
+    position: absolute;
+    width: 180px;
+    height: 200px;
+    left: calc(50vw - 180px/2);
+    top: -70px;
+    background: #329E7E;
+    border-radius: 50%;
+}
+
+#logopanda {
+    /*! display: block; */
+    position: relative;
+    max-width: 150px;
+    height: auto;
+    left: calc(180px/2 - 150px/2);
+    top: 40px;
+}
+
+.navbarbtn {
+    position: absolute;
+    right: 2vw;
+    /*! padding: 15px 25px; */
+    /*! margin: 0px; */
+    font-size: 1.5em;
+}
+
+#propos_nav {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 15vw;
+    background-color: #329E7E;
+    border-bottom-left-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 10px;
+}
+
+#project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 10px 10px;
+    gap: 5px;
+    width: 75vw;
+    height: 281px;
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: calc(1vh + 200px);
+    left: calc(100vw/2 - 75vw/2);
+}
+
+#myproject {
+    position: absolute;
+    top: calc(1vh + 200px);
+    left: calc(50vw - 37vw - 0px);
+    width: calc(74vw + 20px);
+    height: 100px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-size: 1em;
+    background: red;
+}
