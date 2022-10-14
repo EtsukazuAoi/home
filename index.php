@@ -17,12 +17,12 @@
             <div id="logo">
                 <img id="logopanda" src="./assets/img/PandaMor3ackV2.png" />
             </div>
-            <!-- <div id="propos_nav" style="display: none;">
-                <p id="mentionlegale" class="btn">Mentions légales</p>
+            <div id="propos_nav" style="display: none;">
+                <p id="mentionlegale" class="btn"></p>
             </div>
             <div class="navbarbtn btn" id="navbarbtn">
-                <p>A PROPOS</p>
-            </div> -->
+                <p></p>
+            </div>
         </div>
 
         <h1 id="myproject">MES PROJECT</h1>
@@ -53,12 +53,12 @@
             (target.style.display == 'none') ?
                 '' :
                 'none';
-            // document.getElementById("navbarbtn").addEventListener("click", function(e) {
-            //     toggleDisplay(document.getElementById("propos_nav"));
-            // });
-            // document.getElementById("mentionlegale").addEventListener("click", function(e) {
-
-            //});
+             document.getElementById("navbarbtn").addEventListener("click", function(e) {
+                 toggleDisplay(document.getElementById("propos_nav"));
+             });
+             document.getElementById("mentionlegale").addEventListener("click", function(e) {
+                document.getElementById("conditions").style.display = "";
+            });
             <?php
                 // foreatch project for echo key and value
                 foreach ($project as $key => $value) {
@@ -69,5 +69,6 @@
 
             ?>
         </script>
+        <script type="text/javascript" src="conditions.js"></script>
     </body>
 </html>

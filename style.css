@@ -106,6 +106,10 @@ body{
     font-size: 1.5em;
 }
 
+.navbarbtn p::after {
+    content: "A PROPOS";
+}
+
 #propos_nav {
     position: fixed;
     top: 60px;
@@ -119,6 +123,10 @@ body{
     text-align: center;
     letter-spacing: 0.1em;
     padding: 10px;
+}
+
+#propos_nav #mentionlegale::after {
+    content: 'Mentions légales';
 }
 
 #project {
@@ -174,7 +182,12 @@ h3 {
     .projectS {
         width: 50vw;
     }
-    .navbarbtn {
-        display: none;
+    .navbarbtn p::after {
+        content: '☰';
     }
+
+    #propos_nav #mentionlegale::after {
+        content: 'M.L';
+    }
+
 }
